@@ -12,6 +12,10 @@
                         "Value": {
                             "Fn::Sub": "${AWS::StackName}/ClusterSharedNodeSecurityGroup"
                         }
+                    },
+                    {
+                        "Key": "yor_trace",
+                        "Value": "77e25c1c-5dc4-4e73-9f6a-83df2bb6cc91"
                     }
                 ],
                 "VpcId": {
@@ -66,6 +70,10 @@
                         "Value": {
                             "Fn::Sub": "${AWS::StackName}/ControlPlaneSecurityGroup"
                         }
+                    },
+                    {
+                        "Key": "yor_trace",
+                        "Value": "35625743-06e5-4813-8902-4fc23c5d44dc"
                     }
                 ],
                 "VpcId": {
@@ -97,6 +105,10 @@
                         "Value": {
                             "Fn::Sub": "${AWS::StackName}/InternetGateway"
                         }
+                    },
+                    {
+                        "Key": "yor_trace",
+                        "Value": "193980b2-cb2e-4d51-8613-eb80ff17079e"
                     }
                 ]
             }
@@ -116,6 +128,10 @@
                         "Value": {
                             "Fn::Sub": "${AWS::StackName}/NATGateway"
                         }
+                    },
+                    {
+                        "Key": "yor_trace",
+                        "Value": "d9ebf114-d6c4-4a61-bc22-974479c2ded3"
                     }
                 ]
             }
@@ -123,6 +139,12 @@
         "NATIP": {
             "Type": "AWS::EC2::EIP",
             "Properties": {
+                "Tags": [
+                  {
+                    "Key": "yor_trace",
+                    "Value": "fed84811-fe3e-406c-8365-c6fc6bd63bae"
+                  }
+                ],
                 "Domain": "vpc"
             }
         },
@@ -223,6 +245,10 @@
                         "Value": {
                             "Fn::Sub": "${AWS::StackName}/PrivateRouteTableUSWEST2B"
                         }
+                    },
+                    {
+                        "Key": "yor_trace",
+                        "Value": "a6c46a03-fd73-4eac-9435-1c6dd57a8f7f"
                     }
                 ],
                 "VpcId": {
@@ -239,6 +265,10 @@
                         "Value": {
                             "Fn::Sub": "${AWS::StackName}/PrivateRouteTableUSWEST2C"
                         }
+                    },
+                    {
+                        "Key": "yor_trace",
+                        "Value": "fde2da23-8151-4a55-89b5-9160e8c389ff"
                     }
                 ],
                 "VpcId": {
@@ -255,6 +285,10 @@
                         "Value": {
                             "Fn::Sub": "${AWS::StackName}/PrivateRouteTableUSWEST2D"
                         }
+                    },
+                    {
+                        "Key": "yor_trace",
+                        "Value": "b09214e0-06fa-4fc6-88bc-5bee194a020b"
                     }
                 ],
                 "VpcId": {
@@ -271,6 +305,10 @@
                         "Value": {
                             "Fn::Sub": "${AWS::StackName}/PublicRouteTable"
                         }
+                    },
+                    {
+                        "Key": "yor_trace",
+                        "Value": "ee15724c-8f74-4f03-972c-6252611a4ebf"
                     }
                 ],
                 "VpcId": {
@@ -359,6 +397,12 @@
         "ServiceRole": {
             "Type": "AWS::IAM::Role",
             "Properties": {
+                "Tags": [
+                  {
+                    "Key": "yor_trace",
+                    "Value": "1087ec4b-2726-4012-8225-693301cc8ce7"
+                  }
+                ],
                 "AssumeRolePolicyDocument": {
                     "Statement": [
                         {
@@ -395,6 +439,10 @@
                         "Value": {
                             "Fn::Sub": "${AWS::StackName}/SubnetPrivateUSWEST2B"
                         }
+                    },
+                    {
+                        "Key": "yor_trace",
+                        "Value": "38b31bde-74a6-40f9-a1ae-17efc1526bf8"
                     }
                 ],
                 "VpcId": {
@@ -417,6 +465,10 @@
                         "Value": {
                             "Fn::Sub": "${AWS::StackName}/SubnetPrivateUSWEST2C"
                         }
+                    },
+                    {
+                        "Key": "yor_trace",
+                        "Value": "627c45d4-39c9-4df9-a01b-ce7c961c7c22"
                     }
                 ],
                 "VpcId": {
@@ -439,6 +491,10 @@
                         "Value": {
                             "Fn::Sub": "${AWS::StackName}/SubnetPrivateUSWEST2D"
                         }
+                    },
+                    {
+                        "Key": "yor_trace",
+                        "Value": "c2aacccd-3705-4224-a6eb-55217a1b69d2"
                     }
                 ],
                 "VpcId": {
@@ -461,6 +517,10 @@
                         "Value": {
                             "Fn::Sub": "${AWS::StackName}/SubnetPublicUSWEST2B"
                         }
+                    },
+                    {
+                        "Key": "yor_trace",
+                        "Value": "d3e0fde6-fe6e-41a1-8099-046c1a4b1e9a"
                     }
                 ],
                 "VpcId": {
@@ -483,6 +543,10 @@
                         "Value": {
                             "Fn::Sub": "${AWS::StackName}/SubnetPublicUSWEST2C"
                         }
+                    },
+                    {
+                        "Key": "yor_trace",
+                        "Value": "ffc8afa3-4a6a-4801-b861-8cf84996152b"
                     }
                 ],
                 "VpcId": {
@@ -505,6 +569,10 @@
                         "Value": {
                             "Fn::Sub": "${AWS::StackName}/SubnetPublicUSWEST2D"
                         }
+                    },
+                    {
+                        "Key": "yor_trace",
+                        "Value": "d91e1016-4ed1-4855-bbae-3f274a21edee"
                     }
                 ],
                 "VpcId": {
@@ -524,6 +592,10 @@
                         "Value": {
                             "Fn::Sub": "${AWS::StackName}/VPC"
                         }
+                    },
+                    {
+                        "Key": "yor_trace",
+                        "Value": "2658dfea-2cea-4468-aacf-246f2685877d"
                     }
                 ]
             }
