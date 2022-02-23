@@ -5,6 +5,12 @@
         "Role1": {
             "Type": "AWS::IAM::Role",
             "Properties": {
+                "Tags": [
+                  {
+                    "Key": "yor_trace",
+                    "Value": "e49c4448-4d20-4ec6-9006-01c67f8539fa"
+                  }
+                ],
                 "AssumeRolePolicyDocument": {
                     "Statement": [
                         {
